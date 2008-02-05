@@ -1,0 +1,37 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 3150e244324647f48f705cca867fa8f8a86a177c Build.PL
+SHA1 782514e3ec4e5b2a1bde0c11110ff40ff6e8a212 Changes
+SHA1 c89350f04421fa8390ac258c7d0cc55b41a09967 MANIFEST
+SHA1 b5237b162dec83b947a84c76286866fbef9f8c51 META.yml
+SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
+SHA1 f5885aee300461191a084e2f4e12eb4f71f2a9ee README
+SHA1 121eed888f931e38cc9e19951f435df8ebf92b3a lib/Fey/Test.pm
+SHA1 7f79c5eabe3dc36313afdd2ae1c60a2c47ef7baf lib/Fey/Test/Loader.pm
+SHA1 bf6bffdec42a1333d5b92a925d1b3b9b82a601ca lib/Fey/Test/Pg.pm
+SHA1 418c9200daa91c4494e0af8085a9319d614e31d0 lib/Fey/Test/SQLite.pm
+SHA1 2c4829e2e57e10521a02455f57e14d6c1f22f2be lib/Fey/Test/mysql.pm
+SHA1 9ade2293d6e5ea77d94532132c89cd205ea85ed7 t/kwalitee.t
+SHA1 28a931f3b0c075d8d6c4ce47d5e89c3fdb19ed0f t/pod-coverage.t
+SHA1 cec881e89926d320475f9de2b7fad02c2169f510 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFHqMi53Or3ZzQuifMRAi1jAKCMgYpxY5sDuRgv5fE75xJfsHnYJwCglRSN
+mKD3gZqHbu6WA2TADiAK/F0=
+=r4lM
+-----END PGP SIGNATURE-----
