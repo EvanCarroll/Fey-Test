@@ -1,3 +1,11 @@
+0.02   2008-02-06
+
+- Make sure at least one test runs so I don't get UNKNOWN reports from
+  CPAN testers.
+
+- Add proper prereqs.
+
+
 0.01   2008-02-05
 
-* First version, released on an unsuspecting world.
+- First version, released on an unsuspecting world.

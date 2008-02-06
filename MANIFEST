@@ -12,4 +12,5 @@ README
 t/kwalitee.t
 t/pod-coverage.t
 t/pod.t
+t/use.t
 SIGNATURE    Added here by Module::Build
