@@ -1,6 +1,6 @@
 ---
 name: Fey-Test
-version: 0.02
+version: 0.03
 author:
   - 'Dave Rolsky, <autarch@urth.org>'
 abstract: Test libraries for Fey distros
@@ -15,7 +15,7 @@ requires:
 provides:
   Fey::Test:
     file: lib/Fey/Test.pm
-    version: 0.02
+    version: 0.03
   Fey::Test::Loader:
     file: lib/Fey/Test/Loader.pm
   Fey::Test::Pg:

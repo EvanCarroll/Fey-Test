@@ -1,3 +1,10 @@
+0.03   2008-02-07
+
+- The one test that ran failed if Fey wasn't already installed,
+  leading to a circular dependency. Now the one test that runs will
+  always succeed.
+
+
 0.02   2008-02-06
 
 - Make sure at least one test runs so I don't get UNKNOWN reports from
