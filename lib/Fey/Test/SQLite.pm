@@ -44,7 +44,7 @@ use File::Temp ();
 
     sub dsn
     {
-        dbh();
+        shift->dbh();
 
         return $DSN;
     }

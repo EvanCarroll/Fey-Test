@@ -21,7 +21,7 @@ BEGIN
 
 use Test::MockObject;
 
-our $VERSION = 0.03;
+our $VERSION = '0.04';
 
 
 sub mock_test_schema
