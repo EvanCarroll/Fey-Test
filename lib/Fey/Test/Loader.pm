@@ -61,8 +61,8 @@ sub compare_pk
 
     local $Test::Builder::Level = $Test::Builder::Level + 1;
 
-    my @pk1 = map { $_->name() } $table1->primary_key();
-    my @pk2 = map { $_->name() } $table2->primary_key();
+    my @pk1 = map { $_->name() } @{ $table1->primary_key() };
+    my @pk2 = map { $_->name() } @{ $table2->primary_key() };
 
     my $expect =
         exists $override->{ $table1->name() }{primary_key}
@@ -83,13 +83,13 @@ sub compare_ck
     local $Test::Builder::Level = $Test::Builder::Level + 1;
 
     my @ck1;
-    for my $ck1 ( $table1->candidate_keys() )
+    for my $ck1 ( @{ $table1->candidate_keys() } )
     {
         push @ck1, [ map { $_->name() } @{ $ck1 } ];
     }
 
     my @ck2;
-    for my $ck2 ( $table2->candidate_keys() )
+    for my $ck2 ( @{ $table2->candidate_keys() } )
     {
         push @ck2, [ map { $_->name() } @{ $ck2 } ];
     }

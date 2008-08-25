@@ -1,3 +1,8 @@
+0.05   2008-08-25
+
+- Tweaks to handle Fey 0.10 API changes.
+
+
 0.04   2008-02-20
 
 - Fix a bug in the dsn() method.
