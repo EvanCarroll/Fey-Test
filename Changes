@@ -1,3 +1,9 @@
+0.06   2008-12-09
+
+- Entirely internal changes now that I've moved the repo from svn to
+  hg.
+
+
 0.05   2008-08-25
 
 - Tweaks to handle Fey 0.10 API changes.

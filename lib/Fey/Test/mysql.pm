@@ -13,7 +13,7 @@ BEGIN
         plan skip_all => 'These tests require DBD::mysql';
     }
 
-    unless ( $ENV{FEY_MAINTAINER_TEST_MYSQL} || -d '.svn' )
+    unless ( $ENV{FEY_MAINTAINER_TEST_MYSQL} || -d '.hg' )
     {
         plan skip_all =>
             'These tests are only run if the FEY_MAINTAINER_TEST_MYSQL'
