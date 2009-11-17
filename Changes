@@ -1,3 +1,9 @@
+0.07   2009-11-17
+
+- Made some changes to the schema definitions used to test Fey::Loader in
+  order to test its handling of upper and lower case identifiers.
+
+
 0.06   2008-12-09
 
 - Entirely internal changes now that I've moved the repo from svn to

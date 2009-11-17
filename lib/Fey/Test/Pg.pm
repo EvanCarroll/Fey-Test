@@ -10,7 +10,7 @@ BEGIN
     local $Test::Builder::Level = $Test::Builder::Level + 1;
     unless ( eval { require DBD::Pg; 1 } )
     {
-        plan skip_all => 'These tests require DBD::mysql';
+        plan skip_all => 'These tests require DBD::Pg';
     }
 
     unless ( $ENV{FEY_MAINTAINER_TEST_PG} || -d '.hg' )
@@ -94,12 +94,12 @@ CREATE TABLE "UserGroup" (
 EOF
           <<'EOF',
 CREATE TABLE "Message" (
-    message_id    serial        not null,
-    quality       decimal(5,2)  not null  default 2.3,
-    message       varchar(255)  not null  default 'Some message \'" text',
-    message_date  date          not null  default NOW(),
-    parent_message_id  integer  null,
-    user_id       integer       not null,
+    message_id    SERIAL        NOT NULL,
+    quality       DECIMAL(5,2)  NOT NULL  DEFAULT 2.3,
+    message       VARCHAR(255)  NOT NULL  DEFAULT 'Some message \'" text',
+    message_date  DATE          NOT NULL  DEFAULT NOW(),
+    parent_message_id  INTEGER  NULL,
+    user_id       INTEGER       NOT NULL,
     PRIMARY KEY (message_id),
     FOREIGN KEY (parent_message_id) REFERENCES  "Message" (message_id),
     FOREIGN KEY (user_id)           REFERENCES  "User"  (user_id)

@@ -13,9 +13,9 @@ AUTHOR
 
 BUGS
     Please report any bugs or feature requests to
-    "bug-fey-test@rt.cpan.org", or through the web interface at
-    <http://rt.cpan.org>. I will be notified, and then you'll automatically
-    be notified of progress on your bug as I make changes.
+    `bug-fey-test@rt.cpan.org', or through the web interface at
+    http://rt.cpan.org. I will be notified, and then you'll automatically be
+    notified of progress on your bug as I make changes.
 
 COPYRIGHT & LICENSE
     Copyright 2006-2008 Dave Rolsky, All Rights Reserved.

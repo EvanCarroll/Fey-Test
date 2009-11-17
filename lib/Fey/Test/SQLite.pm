@@ -88,12 +88,12 @@ CREATE TABLE UserGroup (
 EOF
           <<'EOF',
 CREATE TABLE Message (
-    message_id    integer     not null  primary key autoincrement,
-    quality       real(5,2)   not null  default 2.3,
-    message       text        not null  default 'Some message ''" text',
-    message_date  date        not null  default current_date,
-    parent_message_id  integer  null,
-    user_id       integer     not null
+    message_id    INTEGER     NOT NULL  PRIMARY KEY AUTOINCREMENT,
+    quality       REAL(5,2)   NOT NULL  DEFAULT 2.3,
+    message       TEXT        NOT NULL  DEFAULT 'Some message ''" text',
+    message_date  DATE        NOT NULL  DEFAULT CURRENT_DATE,
+    parent_message_id  INTEGER  NULL,
+    user_id       INTEGER     NOT NULL
 )
 EOF
           <<'EOF',

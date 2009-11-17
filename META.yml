@@ -1,30 +1,36 @@
 ---
 name: Fey-Test
-version: 0.06
+version: 0.07
 author:
   - 'Dave Rolsky, <autarch@urth.org>'
 abstract: Test libraries for Fey distros
 license: perl
 resources:
+  bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Fey-Test
+  homepage: http://www.fey-project.org/
   license: http://dev.perl.org/licenses/
+  repository: http://hg.urth.org/hg/Fey-Test
 requires:
   DBI: 0
   File::Temp: 0
   List::MoreUtils: 0
   Test::More: 0
+configure_requires:
+  Module::Build: 0.35
 provides:
   Fey::Test:
     file: lib/Fey/Test.pm
-    version: 0.06
+    version: 0.07
   Fey::Test::Loader:
     file: lib/Fey/Test/Loader.pm
+    version: 0.07
   Fey::Test::Pg:
     file: lib/Fey/Test/Pg.pm
   Fey::Test::SQLite:
     file: lib/Fey/Test/SQLite.pm
   Fey::Test::mysql:
     file: lib/Fey/Test/mysql.pm
-generated_by: Module::Build version 0.3
+generated_by: Module::Build version 0.35
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4

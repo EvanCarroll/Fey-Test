@@ -101,12 +101,12 @@ CREATE TABLE UserGroup (
 EOF
           <<'EOF',
 CREATE TABLE Message (
-    message_id    integer       not null  auto_increment,
-    quality       decimal(5,2)  not null  default 2.3,
-    message       varchar(255)  not null  default 'Some message \'" text',
-    message_date  timestamp     not null  default CURRENT_TIMESTAMP,
-    parent_message_id  integer  null,
-    user_id       integer       not null,
+    message_id    INTEGER       NOT NULL  AUTO_INCREMENT,
+    quality       DECIMAL(5,2)  NOT NULL  DEFAULT 2.3,
+    message       VARCHAR(255)  NOT NULL  DEFAULT 'Some message \'" text',
+    message_date  TIMESTAMP     NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    parent_message_id  INTEGER  NULL,
+    user_id       INTEGER       NOT NULL,
     PRIMARY KEY (message_id)
 ) TYPE=INNODB
 EOF

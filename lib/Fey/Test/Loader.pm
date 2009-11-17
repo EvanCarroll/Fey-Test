@@ -5,6 +5,8 @@ use warnings;
 
 use Test::More;
 
+our $VERSION = '0.07';
+
 
 sub compare_schemas
 {
@@ -128,7 +130,7 @@ sub compare_columns
                 exists $override->{$fq_name}{$meth}
                 ? $override->{$fq_name}{$meth}
                 : $col2->$meth();
-            is( $col1->$meth(), $expect,
+            is( lc $col1->$meth(), lc $expect,
                 "schemas agree on $meth for $fq_name" );
         }
 

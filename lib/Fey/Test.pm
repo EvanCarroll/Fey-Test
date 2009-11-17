@@ -22,7 +22,7 @@ BEGIN
 
 use Test::MockObject;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 
 sub mock_test_schema
@@ -152,19 +152,19 @@ sub _message_table
 
     my $message_id =
         Fey::Column->new( name              => 'message_id',
-                          type              => 'integer',
+                          type              => 'INTEGER',
                           is_auto_increment => 1,
                         );
 
     my $message =
         Fey::Column->new( name    => 'message',
-                          type    => 'text',
+                          type    => 'TEXT',
                           default => q{Some message '" text},
                         );
 
     my $quality =
         Fey::Column->new( name      => 'quality',
-                          type      => 'float',
+                          type      => 'FLOAT',
                           length    => 5,
                           precision => 2,
                           default   => 2.3,
@@ -172,19 +172,19 @@ sub _message_table
 
     my $message_date =
         Fey::Column->new( name    => 'message_date',
-                          type    => 'date',
+                          type    => 'DATE',
                           default => Fey::Literal::Function->new('NOW'),
                         );
 
     my $parent_message_id =
         Fey::Column->new( name        => 'parent_message_id',
-                          type        => 'integer',
+                          type        => 'INTEGER',
                           is_nullable => 1,
                         );
 
     my $user_id =
         Fey::Column->new( name => 'user_id',
-                          type => 'integer',
+                          type => 'INTEGER',
                         );
 
     $t->add_column($_)
